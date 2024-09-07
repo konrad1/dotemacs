@@ -79,3 +79,6 @@ Videos
 .viminfo
 Vorlagen
 .vscode
+*
+!.emacs
+!.gitignore
