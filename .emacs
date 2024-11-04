@@ -1,4 +1,6 @@
+(cua-mode)
 (prefer-coding-system 'utf-8)
+
 ;; melpa
 (require 'package)
 (add-to-list 'package-archives
@@ -13,6 +15,7 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
+(setq recentf-keep '(file-remote-p file-readable-p))
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 (setq inhibit-startup-screen t)
 
@@ -133,7 +136,7 @@
 (put 'upcase-region 'disabled nil)
 
 ; make backups only for files already have one
-;(setq version-control t)
+(setq version-control t)
 
 
 (defun filter-monthly-from-daily-quotes-ariva ()
